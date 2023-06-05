@@ -1,0 +1,90 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: beige;
+}
+
+button {
+  background-color: rgb(79, 134, 197);
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: rgb(255, 239, 169);
+}
+
+/* Main styles */
+.title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  color: rgb(19, 94, 94);
+}
+
+.lorem-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lorem-form input {
+  padding: 0.5rem;
+  width: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.lorem-text {
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.copy {
+  background-color: grey;
+  color: azure;
+}
+
+.clear {
+  background-color: red;
+  color: beige;
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 13px;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  .lorem-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .generate-btn {
+    display: block;
+    width: 80%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+}
