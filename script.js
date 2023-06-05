@@ -36,7 +36,7 @@ generateBtn.addEventListener("click", (e) => {
     let newText = text.slice(0, value);
     newText = newText
       .map((item) => {
-        return `<p>${item}</p>`;
+        return `<p>${item}</p> </br>`;
       })
       .join("");
     result.innerHTML = newText;
